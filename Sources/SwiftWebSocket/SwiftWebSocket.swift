@@ -21,7 +21,7 @@ extension WebSocket {
 }
 
 public class WebSocket {
-    private(set) var state: State = .notConnected
+    public private(set) var state: State = .notConnected
 
     public let messages: AsyncThrowingStream<Data, Error>
 
